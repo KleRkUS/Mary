@@ -119,7 +119,6 @@ export default class Responsible extends React.Component {
 
   render() {
     const users = this.getUsersFromData();
-    console.log(users);
 
     return (
         <div className="responsible--content">
