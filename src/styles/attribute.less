@@ -1,0 +1,33 @@
+.attribute {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: .5em 1em;
+  box-sizing: border-box;
+  border-radius: .5em;
+
+  img {
+    width: 1.5em;
+  }
+
+  &--active {
+    background: #24729E;
+  }
+
+  &--inactive {
+    background: #EFF0F6;
+  }
+
+  &--title {
+    font-size: 1.1em;
+
+    &--active {
+      color: #F7F7FC;
+    }
+
+    &--inactive {
+      color: #6E7191;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.expires--date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: .6em;
+
+  &--date {
+    margin-left: .5em;
+    font-size: .8em;
+    padding: .2em .4em;
+    border: 1px solid #3C3954;
+    border-radius: .2em;
+  }
+}
+
+.responsible--content {
+  height: 86.2vh;
+  padding-top: .5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &--top {
+  }
+
+  &--bottom {
+
+    padding-top: 1em;
+    &--button {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: .5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .7em 0;
+
+      &--first {
+        background: #FCFCFC;
+        border: 1px solid #24729E;
+        color: #24729E;
+        padding: .9em 0;
+        margin-bottom: .5em;
+      }
+
+      &--second {
+        background: #24729E;
+        color: #FCFCFC;
+        border: 1px solid #24729E;
+
+        img {
+          width: 1.5em;
+          margin-right: .3em;
+        }
+      }
+    }
+
+  }
+
+  &--blocks--inactive {
+    max-height: 70vh;
+    overflow: scroll;
+
+    &--inner {
+
+    }
+
+    .bordered--content {
+      border: 0;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+.responsible--popup {
+  &--wrapper {
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(196, 196, 196, 0.1);
+    backdrop-filter: blur(20px);
+  }
+
+  &--add {
+    z-index: 6;
+    width: 95%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: -30vh;
+    left: 2.5%;
+    background: #FCFCFC;
+    padding: .5em;
+    border-radius: .5em;
+    box-sizing: border-box;
+
+    &--title {
+      color: #0C4E73;
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: .2em 0 .8em 0;
+      border-radius: .75em;
+    }
+
+    &--input {
+      border: 1px solid #BBBDD5;
+      background: #FCFCFC;
+      padding: .3em .4em;
+      box-sizing: border-box;
+      color: #14142B;
+      width: 100%;
+      font-size: 1em;
+      margin-bottom: .9em;
+      border-radius: .3em;
+
+      &::placeholder {
+        color: #BBBDD4;
+      }
+    }
+
+    &--buttons {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        width: 48%;
+        border-radius: .5em;
+        padding: .75em 0;
+        text-align: center;
+        border: 1px solid #24729E;
+      }
+
+      &--decline {
+        color: #24729E;
+        background: #FCFCFC;
+      }
+
+      &--accept {
+        color: #FCFCFC;
+        background: #24729E;
+      }
+    }
+
+    &--active {
+      bottom: 12vh;
+    }
+  }
+}

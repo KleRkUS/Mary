@@ -1,0 +1,63 @@
+@import "_variables";
+
+.main--header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8.8%;
+  box-sizing: border-box;
+  padding: 2em 1em 2em .5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #FCFCFC;
+  justify-content: space-around;
+
+  &--elem {
+    img {
+      width: 1.95em;
+    }
+  }
+
+  &--avatar {
+    position: relative;
+
+    img {
+      border-radius: 50%;
+      width: 1.95em;
+    }
+
+    &::after {
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      width: .4em;
+      height: .4em;
+      display: block;
+      border-radius: 50%;
+      border: .3em solid #fff;
+      background: #14142B;
+      content: "";
+    }
+  }
+  &--edit--overlay {
+    position: absolute;
+    top: 8.4vh;
+    right: 5%;
+
+    li {
+      list-style: none;
+      background: #FCFCFC;
+      font-size: 1em;
+      padding: .3em .5em;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #14142B;
+        font-weight: 500;
+      }
+    }
+  }
+}
