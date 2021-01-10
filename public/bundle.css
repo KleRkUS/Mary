@@ -3,6 +3,9 @@ body {
   font-family: 'Rubik', sans-serif;
   background: #F7F7F7;
 }
+* {
+  font-family: 'Rubik', sans-serif;
+}
 .page--content {
   margin-top: 10.8vh;
 }
