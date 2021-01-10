@@ -172,7 +172,7 @@ export default class Content extends React.Component {
         </section>
         <section className="homepage--content--bottom">
           <button
-            className={`homepage--content--bottom--button homepage--content--bottom--button--${this.state.closed ? "closed" : "opened"} transitioned`}
+            className={`responsible--content--bottom--button responsible--content--bottom--button--second homepage--content--bottom--button--${this.state.closed ? "closed" : "opened"} transitioned`}
             disabled={this.state.closed ? true : ""}
             onClick={this.togglePopupShow}
           >
