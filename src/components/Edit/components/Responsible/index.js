@@ -142,7 +142,7 @@ export default class Responsible extends React.Component {
                       {users[elem].map(user => (
                         <div className="edit--user--block" key={users[elem].indexOf(user)}>
                           <h2>{user}</h2>
-                          <img src="/assets/icons/Edit/cross.svg" alt="&#10006;" data-time={elem} data-user={user} onClick={this.removeUser}/>
+                          <img src={`/assets/icons/Edit/${this.state.type ? "cross" : "Refresh"}.svg`} alt="&#10006;" data-time={elem} data-user={user} onClick={this.removeUser}/>
                         </div>
                       ))}
                     </div>
